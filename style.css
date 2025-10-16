@@ -1,0 +1,117 @@
+body {
+  background: #fcffe8;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+h1 {
+  margin-bottom: 16px;
+  color: #33691e;
+  font-size: 2.3rem;
+}
+.game-settings {
+  margin-bottom: 30px;
+  background: #e1f5fe;
+  border-radius: 12px;
+  padding: 20px 32px;
+  box-shadow: 0 2px 24px #bcd;
+}
+.game-settings label {
+  margin-right: 12px;
+  font-weight: bold;
+}
+#start-game {
+  margin-left: 15px;
+  padding: 6px 18px;
+  font-size: 1.0rem;
+  background: #69f0ae;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+#start-game:hover {
+  background: #43e97b;
+}
+#game-area {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin-top: 18px;
+}
+#game-area.hidden {
+  display: none;
+}
+.board-wrapper {
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px #97d5a3;
+}
+#board {
+  display: block;
+  background: #f6f6f6;
+  border: 2px solid #689f38;
+  border-radius: 6px;
+}
+.controls {
+  min-width: 220px;
+  background: #e0f2f1;
+  border-radius: 8px;
+  padding: 18px 22px;
+  box-shadow: 0 1px 12px #9ccc65;
+}
+#status {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #558b2f;
+}
+#roll-dice {
+  padding: 8px 28px;
+  font-size: 1rem;
+  background: #ffe082;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+#roll-dice:disabled {
+  background: #ececec;
+  color: #aaa;
+  cursor: not-allowed;
+}
+#roll-dice:hover:not(:disabled) {
+  background: #ffd54f;
+}
+#dice-result {
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+  margin-top: 8px;
+  color: #3b3b51;
+  font-weight: 600;
+}
+#players-positions {
+  margin-top: 15px;
+  font-size: 1.0rem;
+}
+.player-status {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.player-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  border: 2px solid #333;
+}
