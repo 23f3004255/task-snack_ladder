@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake and Ladder Game</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Snake and Ladder</h1>
+    <div class="game-settings">
+      <label for="players">Choose Number of Players:</label>
+      <select id="players">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <button id="start-game">Start Game</button>
+    </div>
+    <div id="game-area" class="hidden">
+      <div class="board-wrapper">
+        <canvas id="board" width="500" height="500"></canvas>
+      </div>
+      <div class="controls">
+        <div id="status"></div>
+        <button id="roll-dice">Roll Dice</button>
+        <div id="dice-result"></div>
+        <div id="players-positions"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
